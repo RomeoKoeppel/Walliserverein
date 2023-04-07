@@ -7,12 +7,49 @@
         text-align: left;
         font-family: Verdana;
     }
-    .wrapper img {
+    .sponsor {
+        display: grid;
+    }
+    .hauptsponsor {
+        height: 25vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50% 50%;
+    }
+    .hauptsponsor > div {
+        margin: 15px;
+    }
+    .sponsor > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsor > div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+        width: 75%;
+        height: 100%;
+
         border-color: #f50000;
         border-width: 2px;
         border-radius: 5px;
         border-style: solid;
-        padding: 20px;
+    }
+    .sponsor a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .sponsor img {
+        max-height: 100%;
+        max-width: 100%;
     }
 </style>
 
@@ -22,11 +59,31 @@
     <p>Wir danken allen, die uns unterstützt haben, von ganzem Herzen!</p>
     <div>
         <h2>Hauptsponsoren</h2>
-        <div>
-            <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                     alt="Hier könnte Ihre Werbung stehen!">
-            </a>
+        <div class="sponsor hauptsponsor">
+            <div>
+                <div>
+                    <a href="https://www.elektrosaas.ch/">
+                        <img src="img/hauptsponsoren/elektro-saas.svg"
+                             alt="Elektro Saas">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.lugaia.ch/">
+                        <img src="img/hauptsponsoren/lugaia.jpg"
+                             alt="Lugaia AG">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.walker.swiss/">
+                        <img src="img/hauptsponsoren/walker.jpg"
+                             alt="A. Walker AG">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div>
