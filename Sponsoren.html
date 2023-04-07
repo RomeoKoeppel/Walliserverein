@@ -9,13 +9,20 @@
     }
     .sponsor {
         display: grid;
-    }
-    .hauptsponsor {
         height: 25vh;
+    }
+    .hauptsponsoren {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50% 50%;
     }
-    .hauptsponsor > div {
+    .hauptsponsoren > div {
+        margin: 15px;
+    }
+    .premiumsponsoren {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 33% 33% 33%;
+    }
+    .premiumsponsoren > div {
         margin: 15px;
     }
     .sponsor > div {
@@ -59,27 +66,30 @@
     <p>Wir danken allen, die uns unterstützt haben, von ganzem Herzen!</p>
     <div>
         <h2>Hauptsponsoren</h2>
-        <div class="sponsor hauptsponsor">
+        <div class="sponsor hauptsponsoren">
             <div>
                 <div>
-                    <a href="https://www.elektrosaas.ch/">
+                    <a href="https://www.elektrosaas.ch">
                         <img src="img/hauptsponsoren/elektro-saas.svg"
+                             title="Elektro Saas"
                              alt="Elektro Saas">
                     </a>
                 </div>
             </div>
             <div>
                 <div>
-                    <a href="https://www.lugaia.ch/">
+                    <a href="https://www.lugaia.ch">
                         <img src="img/hauptsponsoren/lugaia.jpg"
+                             title="Lugaia AG"
                              alt="Lugaia AG">
                     </a>
                 </div>
             </div>
             <div>
                 <div>
-                    <a href="https://www.walker.swiss/">
+                    <a href="https://www.walker.swiss">
                         <img src="img/hauptsponsoren/walker.jpg"
+                             title="A. Walker AG"
                              alt="A. Walker AG">
                     </a>
                 </div>
@@ -88,10 +98,26 @@
     </div>
     <div>
         <h2>Premiumsponsoren</h2>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                 alt="Hier könnte Ihre Werbung stehen!">
-        </a>
+        <div class="sponsor premiumsponsoren">
+            <div>
+                <div>
+                    <a href="https://www.fuchs-zermatt.ch">
+                        <img src="img/premiumsponsoren/fuchs.png"
+                             title="Bäckerei Fuchs Zermatt"
+                             alt="Bäckerei Fuchs Zermatt">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.azarch.ch">
+                        <img src="img/premiumsponsoren/az-architekten.png"
+                             title="AZ Architekten"
+                             alt="AZ Architekten">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div>
         <h2>Sponsoren</h2>
