@@ -7,47 +7,161 @@
         text-align: left;
         font-family: Verdana;
     }
-    .wrapper img {
+    .sponsor > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sponsor > div > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        padding: 10px;
+        width: 75%;
+        height: 100%;
+
         border-color: #f50000;
         border-width: 2px;
         border-radius: 5px;
         border-style: solid;
-        padding: 20px;
+    }
+    .sponsor a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        object-fit: contain;
+
+        padding: 10px;
+        width: 100%;
+        height: 100%;
+    }
+    .sponsor img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    @media only screen and (min-width: 600px) {
+        .sponsor {
+            display: grid;
+        }
+        .hauptsponsoren {
+            height: 20vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 50% 50%;
+        }
+        .premiumsponsoren,
+        .goenner {
+            height: 8vh;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 100%;
+        }
+        .hauptsponsoren > div,
+        .premiumsponsoren > div,
+        .goenner > div {
+            margin: 15px;
+        }
+    }
+    @media only screen and (max-width: 600px) {
+        .sponsor {
+            display: flex;
+            flex-direction: column;
+        }
+        .hauptsponsoren > div,
+        .premiumsponsoren > div,
+        .goenner > div {
+            margin: 5px;
+        }
+        .sponsor img {
+            max-height: 60px;
+        }
     }
 </style>
 
 
 <div class="wrapper">
-    <p>Damit diese wunderschöne Tradition jährlich organisiert werden kann, sind wir auf Sponsoren, Gönner und Unterstützer angewiesen.</p>
+    <p>Damit diese wunderschöne Tradition jährlich organisiert werden kann, sind wir auf Sponsoren und Unterstützer angewiesen.</p>
     <p>Wir danken allen, die uns unterstützt haben, von ganzem Herzen!</p>
     <div>
         <h2>Hauptsponsoren</h2>
-        <div>
-            <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                     alt="Hier könnte Ihre Werbung stehen!">
-            </a>
+        <div class="sponsor hauptsponsoren">
+            <div>
+                <div>
+                    <a href="https://www.elektrosaas.ch">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjFr647GmHoY6lqu6LyXGPMnLMXkK-__VcvSwaxW8_DzZmiKqfpYbuGnO89NI1J3tAg9WTThuR4qBrFy36nF0C-gAM2EIIK0dLozmntxM2kNDtrl-t4rz1TMuli7iW2R9PKugX_LAtT9ss8Z_p-pEvVjS7QDLrdjH0tf0Q_1AwcK4_69H_R8wd_8AIniQ/s275/elektro-saas.png"
+                             title="Elektro Saas"
+                             alt="Elektro Saas">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.lugaia.ch">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAURYKuitm6gA30Eu20rqFubVx-lP0YckTk5oE_vMbB5hpoile1S_fRmRbtppMgRDA2ipot1VzbvKGYmx_ha7zDgEFwQqAzVqnb6Sdnl_X0rJASfxxu9x2q4_o0WsH9maGQvJCk6ffUGQC3CBnFqPjFeUEQh0y-zDx37keut03N_hTHDJUJQGFmtdRzw/s421/lugaia.jpg"
+                             title="Lugaia AG"
+                             alt="Lugaia AG">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.walker.swiss">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhpRY1NCozhPpoosagDmm98X_d7AeAK5TaxlWTo7zaKWMw_lN51gM3Y80qjRz3mXeoeyFBMjZo6Eutos94LG77kOdvl1ZHspZNMWmOV3jAk_vTt6nhSCFQnMtK27pnrYZ4pNHSn8QUsFhvr5F00FOIsdLDYDK02_d9ypVnN96KiR2e494kqG5CA-hkeSA/s234/walker.jpg"
+                             title="A. Walker AG"
+                             alt="A. Walker AG">
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <div>
         <h2>Premiumsponsoren</h2>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                 alt="Hier könnte Ihre Werbung stehen!">
-        </a>
+        <div class="sponsor premiumsponsoren">
+            <div>
+                <div>
+                    <a href="https://www.fuchs-zermatt.ch">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgHQ0vM0sQ_dKeaGrp3oyLkto0xxFCsPe486yP7UjOa8ZFgyTt2gnvTjD6fvjMVyWgUbMpF2_rupAAIm73dX9ILMokNjXR9gPizT5EPxE7W9r6QOQ-sFeMSgH3trKPi0bNo7kBnyaBKG_KRvyC4kKlfUqy7Ctvtv0SmgRruh__m96vwZLLlrcVJrXqbDQ/s3367/fuchs.png"
+                             title="Bäckerei Fuchs Zermatt"
+                             alt="Bäckerei Fuchs Zermatt">
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.azarch.ch">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiHy-Cug5VtPCHYj8KE2vrcshKtt0Sii_1d1CluoHzWyI7WP-2LtG7v5V5E67sbGQmHzOReS6zLbhCjYv9DDJftspDLoW51dH6ZPuNqSNkW_PVxYeZhDV6MyZKlW49m7P0fASsPeYM27uwe_ZVw0HEItDR6jbzRdmb5dL18pEaj1pzVNNOuIrZEFg4zlw/s229/az-architekten.png"
+                             title="AZ Architekten"
+                             alt="AZ Architekten">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div>
         <h2>Sponsoren</h2>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                 alt="Hier könnte Ihre Werbung stehen!">
-        </a>
+        <div class="sponsor goenner">
+            <div>
+                <div>
+                    <a href="mailto:valentin.kronig@stud.hslu.ch">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjWK4QrLOO2-dd1f7V4y4d6WIAM-3RL74iE_-2z_FKUx5_tBfUyC8WquUxbjabFJ5xzQpEJJ9P8aBOTOtNWK4bufgAuTil99lFHxm41KNqHgUQmmUuUm46jVZXTTXN19gO7yMO5AKlfHfqj9uGj1mKR-259wx8YRGJ2EsK4ALf9gFp3su_HhZnXFDkdA/s117/hierkoenntestehen.png"
+                             title="Hier könnte Ihre Werbung stehen"
+                             alt="Hier könnte Ihre Werbung stehen">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
     <div>
         <h2>Unterstützer</h2>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                 alt="Hier könnte Ihre Werbung stehen!">
-        </a>
+        <div class="sponsor goenner">
+            <div>
+                <div>
+                    <a href="https://www.zanella.tv">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiTz6CZV8rgOXgrTUkt6I1DiP4RB6Q3gYES6uWNR6JH8PKEQABSbMLvKYW59Q2wNxLZMXoYwnmVwRvt8isJ5X8zFNtKhRhNfT10rw4TFQ2Y5I0Nj-zLu5PNhkD6M7MyV1sbIj3Zby3E2Je9D28Z63Gut-wyI5mI_bNzQcBS7fCKGcikX8AOahx5degmAA/s1580/zanella.png"
+                             title="Zanella Technik und Möbel GmbH"
+                             alt="Zanella Technik und Möbel GmbH">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
