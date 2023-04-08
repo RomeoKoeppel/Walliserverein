@@ -9,9 +9,9 @@
     }
     .sponsor {
         display: grid;
-        height: 25vh;
     }
     .hauptsponsoren {
+        height: 20vh;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 50% 50%;
     }
@@ -19,10 +19,19 @@
         margin: 15px;
     }
     .premiumsponsoren {
+        height: 8vh;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 33% 33% 33%;
+        grid-template-rows: 100%;
     }
     .premiumsponsoren > div {
+        margin: 15px;
+    }
+    .goenner {
+        height: 8vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+    }
+    .goenner > div {
         margin: 15px;
     }
     .sponsor > div {
@@ -62,7 +71,7 @@
 
 
 <div class="wrapper">
-    <p>Damit diese wunderschöne Tradition jährlich organisiert werden kann, sind wir auf Sponsoren, Gönner und Unterstützer angewiesen.</p>
+    <p>Damit diese wunderschöne Tradition jährlich organisiert werden kann, sind wir auf Sponsoren und Unterstützer angewiesen.</p>
     <p>Wir danken allen, die uns unterstützt haben, von ganzem Herzen!</p>
     <div>
         <h2>Hauptsponsoren</h2>
@@ -121,16 +130,28 @@
     </div>
     <div>
         <h2>Sponsoren</h2>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                 alt="Hier könnte Ihre Werbung stehen!">
-        </a>
+        <div class="sponsor goenner">
+            <div>
+                <div>
+                    <img src="img/hierkoenntestehen.png"
+                         title="Hier könnte Ihre Werbung stehen"
+                         alt="Hier könnte Ihre Werbung stehen">
+                </div>
+            </div>
+        </div>
     </div>
     <div>
         <h2>Unterstützer</h2>
-        <a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png">
-            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisIxssTpOWpKqtDKr6SuH9BBt0kryxtq029qSYlPgqTx18CUN_gf6-6qiRA7-loGdo09rR7OqJ0rO3msMHPHiF5CIcMH9g1-zAekFgYd-SHv8qj3hP4_nNYDNthttvZmzxYohwU-NcbIgSKrs7TiEpBNvyKMAXqG6tjCl_683LCr6XxCI1ygrlQwUf0g/s184/HierK%C3%B6nnteStehen.png"
-                 alt="Hier könnte Ihre Werbung stehen!">
-        </a>
+        <div class="sponsor goenner">
+            <div>
+                <div>
+                    <a href="https://www.zanella.tv">
+                        <img src="img/unterstuetzer/zanella.png"
+                             title="Zanella Technik und Möbel GmbH"
+                             alt="Zanella Technik und Möbel GmbH">
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
