@@ -25,6 +25,37 @@
         border-style: solid;
         padding: 20px;
     }
+
+    @media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px)  {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+        tr { border-top: 1px solid #f50000; }
+        tr:first-child { border-top: none; }
+        td {
+            border: none;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 50%;
+        }
+        td:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+        td:nth-of-type(1):before { content: "Datum"; }
+        td:nth-of-type(2):before { content: "Strecke"; }
+        td:nth-of-type(3):before { content: "Distanz"; }
+        td:nth-of-type(4):before { content: "Höhenmeter"; }
+    }
 </style>
 
 <div class="wrapper">
@@ -39,32 +70,52 @@
 
     <div class="schedule">
         <table>
-            <tr>
-                <td>Montag, 17. Juli 2020</td>
-                <td>Luzern - Lungern</td>
-            </tr>
-            <tr>
-                <td>Dienstag, 18. Juli 2020</td>
-                <td>Lungern - Guttannen</td>
-            </tr>
-            <tr>
-                <td>Mittwoch, 19. Juli 2020</td>
-                <td>Guttannen - Grimselpass</td>
-            </tr>
-            <tr>
-                <td>Donnerstag, 20. Juli 2020</td>
-                <td>Grimselpass - Gluringen</td>
-            </tr>
-            <tr>
-                <td>Freitag, 21. Juli 2020</td>
-                <td>Gluringen - Fiesch</td>
-            </tr>
-            <tr>
-                <td>Samstag, 22. Juli 2020</td>
-                <td>Fiesch - Brig</td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Strecke</th>
+                    <th>Distanz</th>
+                    <th>Höhenmeter</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Montag, 17. Juli 2020</td>
+                    <td>Luzern - Lungern</td>
+                    <td>18 km</td>
+                    <td>+661 m / - 381 m</td>
+                </tr>
+                <tr>
+                    <td>Dienstag, 18. Juli 2020</td>
+                    <td>Lungern - Guttannen</td>
+                    <td>22.7 km</td>
+                    <td>+920 m / -770 m</td>
+                </tr>
+                <tr>
+                    <td>Mittwoch, 19. Juli 2020</td>
+                    <td>Guttannen - Grimselpass</td>
+                    <td>17.1 km</td>
+                    <td>+1'288 m / -173 m</td>
+                </tr>
+                <tr>
+                    <td>Donnerstag, 20. Juli 2020</td>
+                    <td>Grimselpass - Gluringen</td>
+                    <td>9.62 km</td>
+                    <td>+50 m / -840 m</td>
+                </tr>
+                <tr>
+                    <td>Freitag, 21. Juli 2020</td>
+                    <td>Gluringen - Fiesch</td>
+                    <td>13.1 km</td>
+                    <td>+180 m / -460 m</td>
+                </tr>
+                <tr>
+                    <td>Samstag, 22. Juli 2020</td>
+                    <td>Fiesch - Brig</td>
+                    <td>20.4 km</td>
+                    <td>+440m / -820 m</td>
+                </tr>
+            </tbody>
         </table>
     </div>
 </div>
-
-
